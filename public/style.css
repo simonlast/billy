@@ -1,0 +1,162 @@
+.noselect {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+body {
+  background-color: #fafafa;
+  font-family: 'source code pro', monospace;
+  overflow: hidden;
+  color: #646464;
+  margin: 0;
+}
+#langcanvas {
+  padding: 0px;
+  margin: 0px auto;
+}
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #3c3c3c;
+  font-family: monospace;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.button:hover {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+.b {
+  opacity: .7;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+.b:hover {
+  opacity: 1;
+}
+.info {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  color: #3c3c3c;
+  font-family: monospace;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.save {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  color: #3c3c3c;
+  font-family: monospace;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.infobox {
+  position: absolute;
+  right: -550px;
+  width: 500px;
+  top: 50px;
+  opacity: .8;
+  color: #3c3c3c;
+  font-family: 'source code pro', monospace;
+  font-size: 25px;
+  background-color: #dcdcdc;
+  line-height: 33px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #a9a9a9;
+}
+.terminal .clipboard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.01;
+  width: 2px;
+}
+.cmd > .clipboard {
+  position: fixed;
+}
+.terminal {
+  padding: 15px;
+  overflow: hidden;
+  color: #3c3c3c;
+  font-family: 'source code pro', monospace;
+  font-size: 25px;
+  background-color: #dcdcdc;
+  line-height: 33px;
+  position: absolute;
+  top: 0;
+  border: 1px solid #a9a9a9;
+  opacity: .8;
+}
+.cmd {
+  padding: 0;
+  margin: 0;
+  height: 1.3em;
+}
+.terminal .terminal-output div {
+  display: block;
+}
+.terminal .terminal-output div span {
+  display: inline-block;
+}
+.terminal .cmd span {
+  display: inline-block;
+}
+.terminal .cmd span.inverted {
+  background-color: #aaa;
+  color: #000;
+}
+.terminal div::-moz-selection,
+.terminal span::-moz-selection {
+  background-color: #aaa;
+  color: #000;
+}
+.terminal div::selection,
+.terminal span::selection {
+  background-color: #aaa;
+  color: #000;
+}
+.terminal .terminal-output div.error,
+.terminal .terminal-output div.error div {
+  color: red;
+}
+.tilda {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+}
+.clear {
+  clear: both;
+}
+.terminal a {
+  color: #0F60FF;
+}
+.terminal a:hover {
+  color: red;
+}

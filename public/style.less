@@ -1,0 +1,194 @@
+@bkg: rgb(250,250,250);
+@terminalbkg: rgb(220,220,220);
+@terminaltext: rgb(60,60,60);
+
+.rounded-corners (@radius: 8px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.shadow(@drop: 10px){
+	-webkit-box-shadow: 0px 1px @drop rgba(0,0,0,0.25);
+ 	-moz-box-shadow: 0px 1px @drop rgba(0,0,0,0.25);
+ 	box-shadow: 0px 1px @drop rgba(0,0,0,0.25);
+}
+
+.noselect{
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+.rotate(@deg: 180deg){
+    -moz-transform:rotate(@deg);
+	-webkit-transform:rotate(@deg);
+	-o-transform:rotate(@deg);
+	-ms-transform:rotate(@deg);
+}
+
+.ease (@time: .2s) {
+	-webkit-transition: all @time ease-in-out;
+    -moz-transition: all @time ease-in-out;
+    -o-transition: all @time ease-in-out;
+    -ms-transition: all @time ease-in-out;
+}
+
+body{
+	background-color:@bkg;
+	font-family:'source code pro',monospace;
+	overflow: hidden;
+	color:rgb(100,100,100);
+	margin: 0;
+}
+
+#langcanvas{
+	padding: 0px;
+	margin: 0px auto;
+
+}
+
+.button{
+	position: absolute;
+    top: 0;
+    right: 0;
+	color: @terminaltext;
+	font-family: monospace;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width:40px;
+	height:40px;
+	text-align:center;
+	
+}
+
+.button:hover{
+	.rotate;
+}
+
+.b {
+	opacity: .7;
+	.ease;
+	.noselect;
+}
+
+.b:hover{
+	opacity: 1;
+}
+
+.info{
+	position: absolute;
+    top: 0;
+    right: 40px;
+	color: @terminaltext;
+	font-family: monospace;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width:40px;
+	height:40px;
+	text-align:center;
+	
+}
+
+.save{
+	position: absolute;
+    top: 0;
+    right: 80px;
+	color: @terminaltext;
+	font-family: monospace;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width:40px;
+	height:40px;
+	text-align:center;
+	
+}
+
+.infobox{
+	position:absolute;
+	right: -550px;
+	width: 500px;
+	top:50px;
+	opacity: .8;
+	color: @terminaltext;
+	font-family: 'source code pro',monospace;
+	font-size: 25px;
+    background-color: @terminalbkg;
+    line-height: 33px;
+	.rounded-corners;
+	padding: 20px;
+	border: 1px solid darken(@terminalbkg,20%);
+
+}
+
+.terminal .clipboard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.01;
+    width: 2px;
+}
+.cmd > .clipboard {
+    position: fixed;
+}
+.terminal {
+    padding: 15px;
+    overflow: hidden;
+    color: @terminaltext;
+	font-family: 'source code pro',monospace;
+	font-size: 25px;
+    background-color: @terminalbkg;
+    line-height: 33px;
+	position:absolute;
+	top:0;
+	border: 1px solid darken(@terminalbkg,20%);
+	opacity: .8;
+}
+.cmd {
+    padding: 0;
+    margin: 0;
+    height: 1.3em;
+}
+.terminal .terminal-output div {
+    display: block;
+}
+.terminal .terminal-output div span {
+    display: inline-block;
+}
+.terminal .cmd span {
+    display: inline-block;
+}
+.terminal .cmd span.inverted {
+    background-color: #aaa;
+    color: #000;
+}
+.terminal div::-moz-selection, .terminal span::-moz-selection {
+    background-color: #aaa;
+    color: #000;
+}
+.terminal div::selection, .terminal span::selection {
+    background-color: #aaa;
+    color: #000;
+}
+.terminal .terminal-output div.error, .terminal .terminal-output div.error div {
+    color: red;
+}
+.tilda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+}
+.clear {
+    clear: both;
+}
+.terminal a {
+    color: #0F60FF;
+}
+.terminal a:hover {
+    color: red;
+}
