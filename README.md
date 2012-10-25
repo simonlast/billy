@@ -1,4 +1,4 @@
-![Alt text](billy/master/screenshot.png)
+![Alt text](https://raw.github.com/simonlast/billy/master/screenshot.png)
 
 #Billy
 ###Billy is a tiny, visually-oriented programming language for children.
