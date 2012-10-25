@@ -5,6 +5,8 @@
 
 The goal of the project is to create a very small, easy-to-understand set of features which can combine to create complex and fun interactions. 
 
+This project was inspired by [Isla](http://github.com/maryrosecook/isla), a project by [Mary Rose Cook](http://github.com/maryrosecook).
+
 Please fork to help out, or submit an issue if you find a bug.
 
 #[Try it out.](http://billylang.jit.su)
