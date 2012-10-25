@@ -1,4 +1,4 @@
-![Alt text](/screenshot.png)
+![Alt text](billy/screenshot.png)
 
 #Billy
 ###Billy is a tiny, visually-oriented programming language for children.
