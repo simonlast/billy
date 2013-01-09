@@ -11,7 +11,7 @@ Please fork to help out, or submit an issue if you find a bug.
 
 Billy is released under the MIT License. See LICENSE.md for details.
 
-#[Try it out.](http://billylang.jit.su)
+#[Try it out.](http://simonlast.org/billy/)
 
 ##The Language
 
