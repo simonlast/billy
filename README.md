@@ -9,6 +9,8 @@ This project was inspired by [Isla](http://github.com/maryrosecook/isla), a proj
 
 Please fork to help out, or submit an issue if you find a bug.
 
+Billy is released under the MIT License. See LICENSE.md for details.
+
 #[Try it out.](http://billylang.jit.su)
 
 ##The Language
